@@ -1,3 +1,10 @@
+"""
+The function maps the character-indices to its tokenized version.
+Input: Pandas Dataframe with the tokenized text, the original text (in string format), the name of the token column in the dataframe.
+Output: Start Indices and End Indices of the tokens in the dataframe.
+The function returns an Index Error when the Input doesnt correspond to the same text.
+Requirements: pandas
+"""
 def map_tokens_to_indices(df, text, columnname):
     start_indices = []
     end_indices = []
